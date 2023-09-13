@@ -1,4 +1,18 @@
 <script>
+	import { onMount } from 'svelte';
+
+	let isSticky = false;
+
+	function handleScroll() {
+		isSticky = window.scrollY > 50; // Adjust the scroll threshold as needed
+	}
+
+	onMount(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
 </script>
 
 <main>

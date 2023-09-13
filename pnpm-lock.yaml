@@ -17,6 +17,9 @@ devDependencies:
   autoprefixer:
     specifier: ^10.4.15
     version: 10.4.15(postcss@8.4.29)
+  composable-component-sdk:
+    specifier: github:prasannsitani-angelone/composable-component-sdk
+    version: github.com/prasannsitani-angelone/composable-component-sdk/836952c1081c283e9bc9b7d835d3b1a1f34abb45(svelte@4.2.0)
   daisyui:
     specifier: ^3.7.3
     version: 3.7.3
@@ -2435,4 +2438,15 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  github.com/prasannsitani-angelone/composable-component-sdk/836952c1081c283e9bc9b7d835d3b1a1f34abb45(svelte@4.2.0):
+    resolution: {tarball: https://codeload.github.com/prasannsitani-angelone/composable-component-sdk/tar.gz/836952c1081c283e9bc9b7d835d3b1a1f34abb45}
+    id: github.com/prasannsitani-angelone/composable-component-sdk/836952c1081c283e9bc9b7d835d3b1a1f34abb45
+    name: composable-component-sdk
+    version: 0.0.1
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.0
     dev: true
