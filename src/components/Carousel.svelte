@@ -1,38 +1,46 @@
 <main>
-	<div class="carousel w-full">
-		<div id="item1" class="carousel-item w-full">
+	<div class="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+		<div class="carousel-item">
 			<img
 				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-				class="w-full"
-				alt=""
+				class="rounded-box"
 			/>
 		</div>
-		<div id="item2" class="carousel-item w-full">
+		<div class="carousel-item">
 			<img
 				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-				class="w-full"
-				alt=""
+				class="rounded-box"
 			/>
 		</div>
-		<div id="item3" class="carousel-item w-full">
+		<div class="carousel-item">
 			<img
 				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-				class="w-full"
-				alt=""
+				class="rounded-box"
 			/>
 		</div>
-		<div id="item4" class="carousel-item w-full">
+		<div class="carousel-item">
 			<img
 				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-				class="w-full"
-				alt=""
+				class="rounded-box"
 			/>
 		</div>
-	</div>
-	<div class="flex justify-center w-full py-2 gap-2">
-		<a href="#item1" class="btn btn-xs">1</a>
-		<a href="#item2" class="btn btn-xs">2</a>
-		<a href="#item3" class="btn btn-xs">3</a>
-		<a href="#item4" class="btn btn-xs">4</a>
+		<div class="carousel-item">
+			<img
+				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+				class="rounded-box"
+			/>
+		</div>
+		<div class="carousel-item">
+			<img
+				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+				class="rounded-box"
+			/>
+		</div>
+		<div class="carousel-item">
+			<img
+				src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+				class="rounded-box"
+			/>
+		</div>
 	</div>
 </main>

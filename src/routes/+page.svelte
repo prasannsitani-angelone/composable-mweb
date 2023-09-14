@@ -1,35 +1,37 @@
 <script>
-	import { CallbackCard } from 'composable-component-sdk';
-	import Carousel from '../components/Carousel.svelte';
-	// import Card from '../components/Card.svelte';
-	import Bottomsheet from '../components/Bottomsheet.svelte';
+	import { Bottomsheet, CallbackCard } from 'composable-component-sdk';
+	import { goto } from '$app/navigation';
 
 	let open = false;
 
 	function handleOverlayOpen() {
 		open = true;
 	}
+
+	function handleOverlayClose() {
+		open = false;
+	}
+
+	function handleExternalScreen() {
+		goto('/about');
+	}
+
+	let array = new Array();
+
+	for (let i = 0; i < 20; i++) {
+		array.push({ id: i, title: `Item ${i}` });
+	}
 </script>
 
-<main on:scroll={(ev) => console.log('ev : ', ev)}>
-	<div class="flex flex-col items-center gap-4">
-		<CallbackCard on:callback={handleOverlayOpen} />
-		<Carousel />
-		<!-- <button class="btn btn-primary w-40" on:click={handleOverlayOpen}> Open Overlay </button>
-		<button class="btn btn-primary w-40" on:click={handleOverlayOpen}> Open Overlay </button> -->
-		<Bottomsheet {open} on:close={() => (open = !open)}>
-			<div class="p-6">
-				<div class="flex flex-col gap-4 justify-center items-center">
-					<h2 class="bold text-xl">Bottom Sheet Height</h2>
-					<p class="text-gray-600 text-ellipsis">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est voluptate reiciendis
-						perspiciatis, suscipit fugit expedita qui, doloribus quo iusto officia deserunt nam
-						voluptates porro. Sed pariatur nemo sequi minima adipisci?
-					</p>
-					<button class="btn btn-primary w-40" on:click={() => (open = false)}> Close </button>
-				</div>
-			</div>
-		</Bottomsheet>
+<main>
+	<div class="flex flex-col items-center gap-4 p-4 shadow-lg">
+		{#each array as item}
+			<CallbackCard
+				on:external-overlay={handleOverlayOpen}
+				on:external-screen={handleExternalScreen}
+			/>
+		{/each}
+		<Bottomsheet {open} on:close={handleOverlayClose} />
 	</div>
 </main>
 
