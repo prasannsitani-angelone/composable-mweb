@@ -13,7 +13,8 @@
 	}
 
 	function handleExternalScreen() {
-		goto('/about');
+		// goto('/about');
+		goto('http://localhost:3000/about');
 	}
 
 	let array = new Array();
@@ -24,7 +25,7 @@
 </script>
 
 <main>
-	<div class="flex flex-col items-center gap-4 p-4 shadow-lg">
+	<div class="relative flex flex-col items-center gap-4 p-4 shadow-lg">
 		{#each array as item}
 			<CallbackCard
 				on:external-overlay={handleOverlayOpen}
