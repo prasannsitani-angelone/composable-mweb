@@ -1,5 +1,5 @@
 <script>
-	import { Bottomsheet, CallbackCard } from 'composable-component-sdk';
+	import { Bottomsheet, CallbackCard, Number } from 'composable-component-sdk';
 	import { goto } from '$app/navigation';
 
 	let open = false;
@@ -22,6 +22,8 @@
 	for (let i = 0; i < 20; i++) {
 		array.push({ id: i, title: `Item ${i}` });
 	}
+
+	Number.setValue(12);
 </script>
 
 <main>

@@ -19,7 +19,7 @@ devDependencies:
     version: 10.4.15(postcss@8.4.29)
   composable-component-sdk:
     specifier: github:prasannsitani-angelone/composable-component-sdk
-    version: github.com/prasannsitani-angelone/composable-component-sdk/dfe276c770fe16483f9d359a95b68e907a5863e5(svelte@4.2.0)
+    version: github.com/prasannsitani-angelone/composable-component-sdk/eee6c43aaf3d2d0b5252f9ba820e64e7bee4a8d2(svelte@4.2.0)
   daisyui:
     specifier: ^3.7.3
     version: 3.7.3
@@ -2440,9 +2440,9 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  github.com/prasannsitani-angelone/composable-component-sdk/dfe276c770fe16483f9d359a95b68e907a5863e5(svelte@4.2.0):
-    resolution: {tarball: https://codeload.github.com/prasannsitani-angelone/composable-component-sdk/tar.gz/dfe276c770fe16483f9d359a95b68e907a5863e5}
-    id: github.com/prasannsitani-angelone/composable-component-sdk/dfe276c770fe16483f9d359a95b68e907a5863e5
+  github.com/prasannsitani-angelone/composable-component-sdk/eee6c43aaf3d2d0b5252f9ba820e64e7bee4a8d2(svelte@4.2.0):
+    resolution: {tarball: https://codeload.github.com/prasannsitani-angelone/composable-component-sdk/tar.gz/eee6c43aaf3d2d0b5252f9ba820e64e7bee4a8d2}
+    id: github.com/prasannsitani-angelone/composable-component-sdk/eee6c43aaf3d2d0b5252f9ba820e64e7bee4a8d2
     name: composable-component-sdk
     version: 0.0.1
     peerDependencies:
